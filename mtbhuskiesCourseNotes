@@ -1,3 +1,28 @@
 #date 2022.7.25
 ES == EcmaScript
 ES6(2015) and beyond == Modern Javascript. Yearly releases after 2015
+
+Number = Floating point numbers // decimals and integers
+
+String = Used for text // Always put in quotes
+
+Boolean = Logical // Always true or false
+
+Undefined = Value taken by variable that is empty(not yet defined)  let children;
+
+Null = Also means 'empty value'
+
+Symbol (ES2015) = Value that is unique and cannot be changed
+
+BigInt (ES2020) =  Larger integers than the Number type can hold
+
+Dynamic Typing = We do not have to manually define the data type of the value stored in a variable. Data types are determined automatically // Value has type, NOT variable!
+
+let x = 23; 
+let x = 'twenty three';
+
+
+mutate variable
+const = immutable variable
+
+const preferred unless you know the variable will change, then use let
