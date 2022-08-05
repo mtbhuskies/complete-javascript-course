@@ -88,7 +88,6 @@ console.log(ageLaurel >= 18);
 const isFullAge = ageLaurel >= 18;
 
 console.log(now - 1991 > now - 2018);
-*/
 
 const now = 2022;
 const ageKevin = now - 1981;
@@ -145,4 +144,98 @@ console.log(markBMI, johnBMI);
 
 markHigherBMI = markBMI > johnBMI;
 console.log(markHigherBMI);
+
+const firstName = 'Kevin';
+const job = 'Technical Support Manager';
+const birthYear = 1981;
+const year = 2022;
+
+const kevin =
+  "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
+console.log(kevin);
+
+const kevinNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+console.log(kevinNew);
+
+console.log(`Just a regular string...`);
+
+console.log('String with \n\
+multiple \n\
+lines');
+
+console.log(`String with
+multiple
+lines`);
+
+const age = 15;
+
+if (age >= 16) {
+  console.log(`Jack can start driving. 🚗`);
+} else {
+  const yearsLeft = 16 - age;
+  console.log(`Jack is too young. Wait another ${yearsLeft} years :)`);
+}
+
+const birthYear = 2007;
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
 */
+
+////////////////////////////////////
+// Coding Challenge #2
+
+/*
+Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
+
+1. Print a nice output to the console, saying who has the higher BMI. The message can be either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!"
+
+HINT: Use an if/else statement 😉
+
+GOOD LUCK 😀
+
+const markWeight = 78;
+const johnWeight = 92;
+const markHeight = 1.69;
+const johnHeight = 1.95;
+
+const markBMI = markWeight / markHeight ** 2;
+const johnBMI = johnWeight / johnHeight ** 2;
+
+if (markBMI > johnBMI) {
+  console.log(
+    `Mark's has a BMI of ${markBMI} and is higher than John's BMI of ${johnBMI}`
+  );
+} else {
+  console.log(
+    `John's has a BMI of ${johnBMI} and is higher than Mark's BMI of ${markBMI}`
+  );
+}
+*/
+// type conversion
+const inputYear = '1981';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Kevin'));
+console.log(typeof NaN);
+
+console.log(String(40), 40);
+
+// type coercion
+// numbers get converted into strings with + operator
+console.log('I am ' + 40 + ' years old');
+
+// minus operator converts to strings to numbers
+console.log('23' - '10' - 3);
+// multiplier operator only works with numbers, converts to numbers
+console.log('23' * '2');
+
+let n = '1' + 1; // '11'
+n = n - 1; // 11-1 = 10
+console.log(n); // 10
